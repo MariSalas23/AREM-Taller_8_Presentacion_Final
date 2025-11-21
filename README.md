@@ -51,7 +51,7 @@ taller-08-presentacion-final/
 │   └── matriz-evaluacion.pdf / .xlsx
 ├── entrega/
 │   ├── resumen-ejecutivo.md
-│   ├── vistas-finales/             # carpeta con diagramas consolidados
+│   ├── vistas-finales/             # carpeta con diagramas ├──consolidados
 │   └── reflexiones/
 │       ├── integrante1.md
 │       ├── integrante2.md
