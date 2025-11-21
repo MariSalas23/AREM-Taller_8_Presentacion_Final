@@ -24,14 +24,14 @@ La siguiente tabla resume cada vista, sus principales diagramas y la relación q
 
 ## 🧩 Hallazgos Clave
 
-- ❗ Dependencia crítica en un único desarrollador senior, que retrasó la migración y elevó riesgo operativo.
-- 🔄 Políticas de clasificación y retención entre Azure y Snowflake no alineadas, afectando cumplimiento normativo (Ley 1581, Ley 1266).
-- 🗂️ Duplicidad de almacenamiento entre SQL, Cosmos, Synapse y Delta Lake, generando costos y complejidad operativa.
-- 🌐 Dependencia fuerte de fuentes externas y CRM Dynamics 365, con riesgos de disponibilidad, latencia y amenazas STRIDE (spoofing, tampering, EoP).
-- 🔐 Seguridad robusta en Azure, pero sin equivalente en Snowflake (auditoría, cifrado, trazabilidad, gobernanza).
-- 🛡️ Ingesta protegida solo por VPN Gateway, sin firewall dedicado ni VNET específica para la capa de buro.
-- 📌 Brechas en la integración con el CRM y fuentes externas impedían trazabilidad completa del ciclo de consulta y facturación.
-- 📌 Brechas de integración entre sistemas internos, fuentes externas y CRM impedían trazabilidad completa de ciclo de consulta y facturación.
+- Dependencia crítica en un único desarrollador senior, que retrasó la migración y elevó riesgo operativo.
+- Políticas de clasificación y retención entre Azure y Snowflake no alineadas, afectando cumplimiento normativo (Ley 1581, Ley 1266).
+- Duplicidad de almacenamiento entre SQL, Cosmos, Synapse y Delta Lake, generando costos y complejidad operativa.
+- Dependencia fuerte de fuentes externas y CRM Dynamics 365, con riesgos de disponibilidad, latencia y amenazas STRIDE (spoofing, tampering, EoP).
+- Seguridad robusta en Azure, pero sin equivalente en Snowflake (auditoría, cifrado, trazabilidad, gobernanza).
+- Ingesta protegida solo por VPN Gateway, sin firewall dedicado ni VNET específica para la capa de buro.
+- Brechas en la integración con el CRM y fuentes externas impedían trazabilidad completa del ciclo de consulta y facturación.
+- Brechas de integración entre sistemas internos, fuentes externas y CRM impedían trazabilidad completa de ciclo de consulta y facturación.
 
 ## 🚀 Recomendaciones Principales
 
