@@ -12,14 +12,15 @@ La arquitectura AS-IS evidenció una fuerte dependencia de servicios distribuido
 
 ## 🧱 Vistas Arquitectónicas Cubiertas
 
-| Vista                  | Alcance de la Solución                      |
-|------------------------|---------------------------------------------|
-| Procesos de Negocio    | BPMN de oportunidades, desarrollo, gestión de fuentes y migración (incluyendo suplente técnico). |
-| Información / Datos    | ERD centralizado de clientes, transacciones, cartera, empleadores e indicadores analíticos.    |
-| Aplicaciones / Sistemas| C1 y C2 actual + C2 objetivo, integrando APIs, frontends, backend, CRM y Snowflake.             |
-| Infraestructura        | Mapa de infraestructura Azure, VNETs, SQL, Cosmos, API Management, Synapse, observabilidad, y arquitectura objetivo con Snowflake. |
-| Seguridad              | Análisis STRIDE, controles de Entra ID, APIM, WAF, Purview, Sentinel, cifrado, gobernanza. |
-| Cumplimiento Normativo | Checklist legal alineado con Ley 1581, Ley 1266, ISO 27001, y brechas en retención, trazabilidad y clasificación. |
+La siguiente tabla resume cada vista, sus principales diagramas y la relación que guarda con las demás:
+
+| Vista                | Resumen breve                                                                                                        | Diagramas principales                                         | Relación con otras vistas                                                                                                    |
+|----------------------|----------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
+| Negocio              | Describe los procesos clave de Zajana y cómo se gestiona el ciclo de vida del producto Macia y la migración a Snowflake. | BPMN de procesos clave, BPMN de migración                     | Define qué actividades requieren datos (*información*), qué funciones deben soportar las *aplicaciones* y qué capacidades debe habilitar la *infraestructura*. |
+| Información          | Modela las entidades de datos, sus atributos y relaciones que soportan el cálculo de *scores* y la operación de Macia. | Modelo Entidad–Relación (ERD)                                 | Provee los objetos de información que consumen los procesos de negocio, las APIs de *aplicaciones* y los servicios de *infraestructura y seguridad*.          |
+| Aplicaciones         | Muestra los sistemas y contenedores que implementan la lógica de negocio y exponen servicios a clientes y operadores. | C1 (Contexto), C2 (Contenedores actual), C2 mejora (Snowflake) | Conecta procesos de *negocio* con datos específicos (*información*) y se apoya en la *infraestructura* para desplegar portales, APIs y servicios analíticos.   |
+| Infraestructura      | Detalla los servicios de Azure y su posterior evolución hacia Snowflake, incluyendo redes, cómputo, almacenamiento y analítica. | Diagramas de infraestructura actual y mejorada                | Es la base técnica sobre la que se despliegan las *aplicaciones*, aloja los repositorios de *información* y sirve de ancla para los controles de *seguridad*.   |
+| Seguridad            | Recoge los controles de identidad, protección de datos, monitoreo y cumplimiento normativo aplicados a toda la solución. | Tabla STRIDE, checklist normativo    | Protege al resto de vistas garantizando que *negocio*, *información*, *aplicaciones* e *infraestructura* cumplan requisitos de confidencialidad, integridad y trazabilidad. |
 
 ## 🧩 Hallazgos Clave
 
