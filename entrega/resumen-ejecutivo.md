@@ -23,6 +23,9 @@ La siguiente tabla resume cada vista, sus principales diagramas y la relación q
 | **Seguridad** | STRIDE, controles de Entra ID, APIM, WAF, Purview, Sentinel, cifrado, políticas de datos y gobernanza. | Define controles de identidad, protección de datos, monitoreo, cifrado, amenazas y mitigaciones aplicadas a toda la solución. | Tabla STRIDE; checklist de controles técnicos. | Cubre transversalmente todas las vistas: protege procesos (*negocio*), asegura datos (*información*), garantiza políticas en *aplicaciones* y se integra a la *infraestructura*. |
 | **Cumplimiento Normativo** | Checklist legal según Ley 1581, Ley 1266, ISO 27001, gestión de retención, trazabilidad y clasificación de datos. | Integra los requisitos regulatorios que deben cumplir datos, procesos, sistemas y flujos entre Azure y Snowflake. | Checklist normativo y matriz de brechas. | Alinea *negocio*, *información*, *aplicaciones*, *infraestructura* y *seguridad* con el marco legal y buenas prácticas de protección de datos y TI. |
 
+Esto se puede ver más a detalle en el siguiente link: 
+[https://github.com/MariSalas23/AREM-Wiki/wiki/Integraci%C3%B3n-de-Vistas-%E2%80%90-Zajana-S.A.S.](https://github.com/MariSalas23/AREM-Wiki/wiki/Integraci%C3%B3n-de-Vistas-%E2%80%90-Zajana-S.A.S.)
+
 ## 🧩 Hallazgos Clave
 
 - Dependencia crítica en un único desarrollador senior, que retrasó la migración y elevó riesgo operativo.
