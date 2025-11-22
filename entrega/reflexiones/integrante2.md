@@ -1,7 +1,7 @@
 # 🙋‍♂️ Reflexión Individual
 
 ## 👤 Nombre del Estudiante
-_Escriba su nombre completo aquí._
+_Mariana Salas Gutiérrez_
 
 ## 💼 Rol en el equipo
 _Describa el rol principal que desempeñó en el desarrollo del proyecto arquitectónico._
